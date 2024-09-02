@@ -1,0 +1,130 @@
+@use '../../../assets/scss/_variables.scss' as *;
+@use '../../../assets/scss/_mixin.scss' as *;
+
+  .sidebar {
+    width: 100%;
+    padding: $spacing-sm 0;
+    margin-bottom: $spacing-sm;
+  }
+  
+  .breadcrumb {
+    padding: 10px 0;
+    font-size: $font-size-base;
+    margin-bottom: $spacing-sm;
+  }
+  
+  .breadcrumb__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .breadcrumb__item {
+    margin-right: 5px;
+  }
+  
+  .breadcrumb__link {
+    text-decoration: none;
+    color: $color-text;
+    transition: color 0.2s;
+  }
+  
+  .breadcrumb__link:hover {
+    color: $color-grey-dark;
+  }
+  
+  .breadcrumb__item::after {
+    content: "/";
+    margin-left: 5px;
+  }
+  
+  .breadcrumb__item:last-child::after {
+    content: "";
+  }
+  
+  .breadcrumb__item--current .breadcrumb__text {
+    color: $color-grey-dark;
+  }
+  
+  .breadcrumb__item--current .breadcrumb__link {
+    pointer-events: none;
+    color: $color-grey-dark;
+  }
+  
+  .filter {
+    border-bottom: 2px solid $color-grey-light;
+    display: none;
+    margin-bottom: $spacing-md;
+  }
+  
+  .filter__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #181c24;
+    margin-bottom: $spacing-sm;
+  }
+  
+  .filter__checkbox,
+  .filter__radio {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #91959c;
+    margin-right: $spacing-sm;
+  }
+  
+  .filter__label {
+    color: $color-text;
+  }
+  
+  @media (min-width: 48rem) {
+    .sidebar {
+      padding: $spacing-sm 0;
+      width: 34%;
+      margin-right: 2%;
+    }
+  
+    .filter {
+      display: block;
+    }
+  
+    .filter__title {
+      color: #181c24;
+      font-weight: 100;
+      font-size: 20px;
+      border-bottom: 2px solid $color-grey-light;
+      padding-bottom: $spacing-sm;
+      margin-bottom: $spacing-sm;
+    }
+  
+    .filter__subtitle {
+      color: #181c24;
+      font-weight: 600;
+      font-size: $font-size-base;
+      padding-bottom: $spacing-sm;
+    }
+  
+    .breadcrumb {
+      margin-bottom: 35px;
+    }
+
+    .filter__categories {
+      display: flex;
+      align-items: center;
+      margin-bottom: $spacing-sm;
+    }
+  
+     
+    .filter__checkbox {
+      margin-right: $spacing-sm;
+    }
+  }
+  
+  @media (min-width: 64rem) {
+    .sidebar {
+      padding: $spacing-sm 0;
+      width: 23%;
+      margin-right: 2%;
+    }
+  }
+  

@@ -1,0 +1,44 @@
+  /* Colors */
+  $color-primary: #1363df;
+  $color-secondary: #6c757d;
+  $color-background: #f8f9fa;
+  $color-grey-light: #d1d3d6;
+  $color-grey-dark: #545d63;
+  $color-blue-dark: #06283d;
+  $color-blue-light: #1b252c;
+  $color-text: #172026;
+  $color-border: #dee2e6;
+  $color-border-light: #dee2e6;
+  $color-white: #fff;
+
+  /* Typography */
+  $font-family-primary: Muli, "Arial", sans-serif;
+  $font-size-base: 1rem; /*font-size 16px */
+  $font-size-lg: 1.125rem; /*font-size 18px */
+  $font-size-sm: 0.875rem; /*font-size 14px */
+  $font-size-xsm: 0.75rem; /*font-size 12px */
+  $font-weight-normal: 400;
+  $font-weight-bold: 700;
+
+  /* Spacing */
+  $spacing-xs: 0.5rem; /*spacing 8px */
+  $spacing-sm: 1rem; /*spacing 16px */
+  $spacing-md: 2rem; /*spacing 32px */
+  $spacing-lg: 3rem; /*spacing 48px */
+  $spacing-xl: 4rem; /*spacing 64px */
+
+  /* Borders & Shadows */
+  $border-radius: 8px;
+  $border-width: 1px;
+  $shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
+  $shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  $shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+  /* Breakpoints */
+  $breakpoint-mobile: 320px;
+  $breakpoint-tablet: 768px;
+  $breakpoint-desktop-sm: 1024px;
+  $breakpoint-desktop-md: 1280px;
+  $breakpoint-desktop-lg: 1440px;
+  $breakpoint-desktop-xl: 1920px;
+
